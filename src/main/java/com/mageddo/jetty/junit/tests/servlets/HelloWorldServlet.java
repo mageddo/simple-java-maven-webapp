@@ -1,6 +1,7 @@
 package com.mageddo.jetty.junit.tests.servlets;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author deFreitas edigitalb@gmail.com
  */
-@WebServlet("/helloWorld")
+@WebServlet(urlPatterns = "/helloWorld")
 public class HelloWorldServlet extends HttpServlet {
 
 	public static String GET_MESSAGE = "Hello from get from " + HelloWorldServlet.class.getSimpleName();

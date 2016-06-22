@@ -8,13 +8,30 @@
 	<artifactId>simple-java-maven-webapp</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
+	<properties >
+		<jetty-version>9.3.10.v20160621</jetty-version>
+	</properties>
 	<dependencies>
 		<!-- annotations servlets support on servlet 3.0 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-			<scope>provided</scope>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>${jetty-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-webapp</artifactId>
+			<version>${jetty-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-annotations</artifactId>
+			<version>${jetty-version}</version>
 		</dependency>
 	</dependencies>
 	<build>
