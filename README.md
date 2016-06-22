@@ -5,3 +5,8 @@
  * Works without xml configurations
  * Uses only annotations
  * Works in java 7 or newer
+
+# Running
+
+	$ mvn clean install
+	# deploy target/app.war to tomcat/jboss/glassfish
