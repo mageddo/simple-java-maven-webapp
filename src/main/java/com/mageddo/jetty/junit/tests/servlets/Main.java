@@ -55,7 +55,7 @@ public class Main {
         context.setContextPath("/");
         context.setParentLoaderPriority(true);
         context.setConfigurationDiscovered(true);
-        context.addServerClass("com.mageddo.jetty.junit.tests.servlets");
+        context.addServlet(HelloWorldServlet.class, "/helloWorld");
         server.setHandler(context);
         server.start();
         server.dump(System.err);
